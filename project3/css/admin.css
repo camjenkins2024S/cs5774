@@ -1,0 +1,58 @@
+.admin-wrap {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.form-note {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.checkbox-row label {
+    font-weight: normal;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.form-actions .btn {
+    margin-top: 0;
+    white-space: nowrap;
+    border: 2px solid var(--maroon);
+}
+
+.form-actions .btn-outline {
+    background-color: var(--white);
+    color: var(--maroon);
+}
+
+.form-actions .btn-outline:hover {
+    background-color: var(--white);
+    text-decoration: underline;
+}
+
+.message-box {
+    margin-top: 40px;
+    padding: 32px;
+    border-top: 4px solid var(--gold);
+    border-radius: var(--radius);
+    background-color: var(--panel);
+    text-align: center;
+}
+
+.message-box .form-actions {
+    justify-content: center;
+    margin: 24px 0;
+}

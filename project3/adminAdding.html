@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kings Road Corner | Add a Book</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- header section -->
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/background-lion.png" alt="" width="40" height="32">
+            Kings Road Corner
+        </a>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li>
+                    <details class="dropdown">
+                        <summary>Categories</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="listing.html">All Books</a></li>
+                            <li><a href="listing.html">Fiction</a></li>
+                            <li><a href="listing.html">Non-Fiction</a></li>
+                            <li><a href="listing.html">Sci-Fi &amp; Fantasy</a></li>
+                            <li><a href="listing.html">Mystery &amp; Thriller</a></li>
+                            <li><a href="listing.html">Classics</a></li>
+                            <li><a href="listing.html">Children's</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="listing.html#requests">Request a Book</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-form" action="search.html" method="get" role="search">
+            <label class="visually-hidden" for="site-search">Search books by title or author</label>
+            <input id="site-search" class="search-input" type="search" name="q" placeholder="Try &quot;dune&quot;..." required>
+            <button class="search-button" type="submit">Search</button>
+        </form>
+
+        <div class="account">
+            <p class="greeting">Hi, Admin</p>
+            <a href="index.html">Log out</a>
+            <a class="cart" href="#">Cart (0)</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- info about book section -->
+        <div class="admin-wrap">
+            <h1>Add a Book</h1>
+
+            <p class="notice">Adding from request: <strong>Piranesi</strong> by Susanna Clarke (14 votes).
+                <a href="listing.html#requests">See all requests</a>
+            </p>
+
+            <form class="form-box" action="adminAdding.html">
+                <p class="form-note">All fields are required unless marked optional.</p>
+
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" value="Piranesi" placeholder="e.g. Piranesi" required>
+
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" value="Susanna Clarke" placeholder="e.g. Susanna Clarke"
+                    required>
+
+                <label for="price">Price (£)</label>
+                <input type="number" id="price" name="price" min="0" step="0.01" placeholder="e.g. 9.99" required>
+
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Choose a category</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="sci-fi">Sci-Fi &amp; Fantasy</option>
+                    <option value="mystery">Mystery &amp; Thriller</option>
+                    <option value="classics">Classics</option>
+                    <option value="childrens">Children's</option>
+                </select>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="5"
+                    placeholder="e.g. A short summary for the book page and why we're stocking it" required></textarea>
+
+                <label for="cover">Cover image (optional)</label>
+                <input type="file" id="cover" name="cover" accept="image/*">
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="notify" name="notify" checked>
+                    <label for="notify">Let the 14 neighbors who requested it know it's in stock</label>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn" type="submit">Add Book</button>
+                    <a class="btn btn-outline" href="index.html">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
+        </ul>
+        <p class="copyright"><small>&copy; 2026 Kings Road Corner</small></p>
+        <ul class="footer-links">
+            <li><a href="#">Find Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="alternativeAdding.html">Staff</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
