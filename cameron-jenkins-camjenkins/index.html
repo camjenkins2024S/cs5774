@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kings Road Corner</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- header section -->
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <!-- i made tis logo myself on canva -->
+            <img src="images/background-lion.png" alt="" width="40" height="32">
+            Kings Road Corner
+        </a>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li>
+                    <details class="dropdown">
+                        <summary>Categories</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="listing.html">All Books</a></li>
+                            <li><a href="listing.html">Fiction</a></li>
+                            <li><a href="listing.html">Non-Fiction</a></li>
+                            <li><a href="listing.html">Sci-Fi &amp; Fantasy</a></li>
+                            <li><a href="listing.html">Mystery &amp; Thriller</a></li>
+                            <li><a href="listing.html">Classics</a></li>
+                            <li><a href="listing.html">Children's</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="listing.html#requests">Request a Book</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-form" action="search.html" method="get" role="search">
+            <label class="visually-hidden" for="site-search">Search books by title or author</label>
+            <input id="site-search" class="search-input" type="search" name="q" placeholder="Try &quot;dune&quot;..." required>
+            <button class="search-button" type="submit">Search</button>
+        </form>
+
+        <div class="account">
+            <p class="greeting">Hi, User</p>
+            <a href="index.html">Log out</a>
+            <!-- couldn't figure out how to make cart logo responsive-->
+            <a class="cart" href="#">Cart (1)</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="pillar" aria-hidden="true"></div>
+            <div>
+                <h1 id="hero-title">Your local bookshop on the Kings Road</h1>
+                <p>
+                    We're a small independent bookshop in Chelsea, London. Use our new site to view our current
+                    inventory or see what local events we are putting on! You can also request books to be added to our
+                    inventory!
+                </p>
+                <a class="btn" href="listing.html">Shop All Books</a>
+            </div>
+        </section>
+
+        <!-- staff rec section -->
+        <section aria-labelledby="featured-title">
+            <div class="section-head">
+                <h2 id="featured-title">Staff Picks This Week</h2>
+                <a href="listing.html">View all books</a>
+            </div>
+
+            <ul class="book-grid">
+                <li class="book-card">
+                    <a class="book-link" href="bookdetails.html">
+                        <!-- img src: https://www.overdrive.com/media/5318037/dune -->
+                        <img class="book-cover" src="images/dune.jpg" alt="Cover of Dune by Frank Herbert" width="300"
+                            height="450">
+                        <h3>Dune</h3>
+                        <p class="book-author">Frank Herbert</p>
+                    </a>
+                </li>
+                <li class="book-card">
+                    <a class="book-link" href="bookdetails.html">
+                        <!-- img src: https://www.overdrive.com/media/784483/crime-and-punishment -->
+
+                        <img class="book-cover" src="images/crime-and-punishment.jpg"
+                            alt="Cover of Crime and Punishment by Fyodor Dostoevsky" width="300" height="450">
+                        <h3>Crime and Punishment</h3>
+                        <p class="book-author">Fyodor Dostoevsky</p>
+                    </a>
+                </li>
+                <li class="book-card">
+                    <a class="book-link" href="bookdetails.html">
+                        <!-- img src: https://www.overdrive.com/media/2661249/invisible-man -->
+
+                        <img class="book-cover" src="images/invisible-man.jpg"
+                            alt="Cover of Invisible Man by Ralph Ellison" width="300" height="450">
+                        <h3>Invisible Man</h3>
+                        <p class="book-author">Ralph Ellison</p>
+                    </a>
+                </li>
+                <li class="book-card">
+                    <a class="book-link" href="bookdetails.html">
+                        <!-- img src: https://www.overdrive.com/media/13569420/the-sirens-of-titan -->
+
+                        <img class="book-cover" src="images/sirens-of-titan.jpg"
+                            alt="Cover of The Sirens of Titan by Kurt Vonnegut" width="300" height="450">
+                        <h3>The Sirens of Titan</h3>
+                        <p class="book-author">Kurt Vonnegut</p>
+                    </a>
+                </li>
+                <li class="book-card">
+                    <a class="book-link" href="bookdetails.html">
+                        <!-- img src: https://www.overdrive.com/media/5371526/the-odyssey -->
+
+                        <img class="book-cover" src="images/the-odyssey.jpg" alt="Cover of The Odyssey by Homer"
+                            width="300" height="450">
+                        <h3>The Odyssey</h3>
+                        <p class="book-author">Homer</p>
+                    </a>
+                </li>
+                <li class="book-card">
+                    <a class="book-link" href="bookdetails.html">
+                        <!-- img src: https://www.overdrive.com/media/36414/white-teeth -->
+
+                        <img class="book-cover" src="images/white-teeth.jpg" alt="Cover of White Teeth by Zadie Smith"
+                            width="300" height="450">
+                        <h3>White Teeth</h3>
+                        <p class="book-author">Zadie Smith</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- other peep request section -->
+        <section class="most-requested" aria-labelledby="requested-title">
+            <div class="section-head">
+                <h2 id="requested-title">Most Requested</h2>
+                <a href="listing.html#requests">See all requests</a>
+            </div>
+            <ol class="top-requests">
+                <li><strong>Piranesi</strong> by Susanna Clarke <span class="vote-total">14 votes</span></li>
+                <li><strong>Tomorrow, and Tomorrow, and Tomorrow</strong> by Gabrielle Zevin <span class="vote-total">9
+                        votes</span></li>
+                <li><strong>The Secret History</strong> by Donna Tartt <span class="vote-total">6 votes</span></li>
+            </ol>
+            <p>Want to request a book? <a href="listing.html#requests">Ask us to stock it</a> and your neighbors can
+                vote
+                for it.</p>
+        </section>
+
+        <!-- local events section -->
+        <section class="events" aria-labelledby="events-title">
+            <div class="section-head">
+                <h2 id="events-title">In the Shop</h2>
+            </div>
+            <ul class="event-list">
+                <li class="event">
+                    <h3>Thursday Book Club</h3>
+                    <p class="event-date">Thursday 1 October, 7pm</p>
+                    <p>This month we're reading White Teeth by Zadie Smith. New members are always welcome.</p>
+                </li>
+                <li class="event">
+                    <h3>Saturday Story Time</h3>
+                    <p class="event-date">Every Saturday, 10:30am</p>
+                    <p>Picture books read in the children's corner for ages 3 to 7.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
+        </ul>
+        <p class="copyright"><small>&copy; 2026 Kings Road Corner</small></p>
+        <ul class="footer-links">
+            <li><a href="#">Find Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="alternativeAdding.html">Staff</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

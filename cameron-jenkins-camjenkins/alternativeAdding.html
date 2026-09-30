@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kings Road Corner | Staff Only</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- header section -->
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/background-lion.png" alt="" width="40" height="32">
+            Kings Road Corner
+        </a>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li>
+                    <details class="dropdown">
+                        <summary>Categories</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="listing.html">All Books</a></li>
+                            <li><a href="listing.html">Fiction</a></li>
+                            <li><a href="listing.html">Non-Fiction</a></li>
+                            <li><a href="listing.html">Sci-Fi &amp; Fantasy</a></li>
+                            <li><a href="listing.html">Mystery &amp; Thriller</a></li>
+                            <li><a href="listing.html">Classics</a></li>
+                            <li><a href="listing.html">Children's</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="listing.html#requests">Request a Book</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-form" action="search.html" method="get" role="search">
+            <label class="visually-hidden" for="site-search">Search books by title or author</label>
+            <input id="site-search" class="search-input" type="search" name="q" placeholder="Try &quot;dune&quot;..." required>
+            <button class="search-button" type="submit">Search</button>
+        </form>
+
+        <div class="account">
+            <p class="greeting">Hi, User</p>
+            <a href="index.html">Log out</a>
+            <a class="cart" href="#">Cart (1)</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- message -->
+        <div class="admin-wrap message-box">
+            <h1>Staff Only</h1>
+            <p>Sorry, the Add a Book page is only for Kings Road Corner staff. You're signed in as a customer.</p>
+            <p>Looking for a book we don't have? Request it and your neighbors can vote for it.</p>
+
+            <div class="form-actions">
+                <a class="btn" href="index.html">Back to home</a>
+                <a class="btn btn-outline" href="listing.html#requests">Request a book</a>
+            </div>
+
+            <p class="form-note">Work here? <a href="adminAdding.html">Log in with your staff account</a></p>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
+        </ul>
+        <p class="copyright"><small>&copy; 2026 Kings Road Corner</small></p>
+        <ul class="footer-links">
+            <li><a href="#">Find Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="alternativeAdding.html">Staff</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
